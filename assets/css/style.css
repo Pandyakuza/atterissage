@@ -3,3 +3,42 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+:root {
+    --couleur-principale: #081C15;
+    --couleur-secondaire: #40916C;
+    --couleur-titre: #EDF2F7;
+    --couleur-alt: #718096;
+}
+
+body {
+    background: var(--couleur-principale);
+}
+
+header{
+    display: flex;
+    position:absolute;
+    top: 0;
+    left:0;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 100px;
+    z-index: 100;
+}
+
+header .logo{
+    position: relative;
+    display: flex;
+    align-items: center;
+    font-size: 28px;
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--couleur-titre);
+}
+
+header .logo .logo__img {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+}

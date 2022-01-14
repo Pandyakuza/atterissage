@@ -127,10 +127,61 @@ section .box__txt .box__btn{
     margin-left: 15px;
 }
 
+section .box__txt .box__btn:hover{
+    background-color:#0f613c;
+}
+
 section .wave{
     position: absolute;
     bottom: 0;
     left: 0;
     z-index: 1;
     pointer-events: none;
+}
+
+footer{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .droits{
+    position: absolute;
+    bottom: 30px;
+    margin: auto 50%;
+    z-index: 1000;
+    width: 50%;
+    color: var(--couleur-titre);
+}
+
+footer .droits a{
+    text-decoration: none;
+    color: var(--couleur-principale);
+
+}
+
+footer .droits a:hover{
+    text-decoration: underline;
+}
+
+footer .social{
+    position:absolute;
+    bottom: 30px;
+    left: 100px;
+    display:flex;
+    justify-content: center;
+    z-index: 1000;
+    align-items: center;
+    filter: invert(1);
+}
+
+footer .social li{
+    list-style-type: none;
+}
+
+footer .social li a{
+    display: block;
+    transform: scale(0.8);
+    margin-right: 20px;
 }

@@ -70,6 +70,7 @@ section{
 section .box__txt{
     position: relative;
     max-width: 700px;
+    z-index: 3;
 }
 
 section .box__txt h2 {

@@ -126,7 +126,7 @@ section .box__txt .box__btn{
     border-radius: 50px;
     max-width: fit-content;
     padding: 15px;
-    font-size: 30px;
+    font-size: 20px;
     color: var(--couleur-titre);
     margin-left: 15px;
 }

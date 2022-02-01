@@ -136,6 +136,7 @@ section .box__txt .clock .time span{
 
 section .box__txt a{
     text-decoration: none;
+    display: inline-block;
 }
 
 section .wave{
@@ -155,7 +156,6 @@ section .box__txt .box__btn{
     justify-content: center;
     background-color:var(--couleur-secondaire);
     border-radius: 50px;
-    max-width: fit-content;
     padding: 15px;
     font-size: 20px;
     color: var(--couleur-titre);
@@ -165,8 +165,6 @@ section .box__txt .box__btn{
 section .box__txt .box__btn:hover{
     background-color:#0f613c;
 }
-
-
 
 header nav .box__btn{
     display: flex;
@@ -189,54 +187,29 @@ header nav .box__btn:hover{
 /* -------------------------------------------FOOTER----------------------------------------- */
 /* ------------------------------------------------------------------------------------------------- */
 
-footer{
-    display: flex;
+footer {
     position: relative;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 100;
+    display: flex;
 }
 
-footer .droits{
+footer .droits {
     position: absolute;
-    bottom: 30px;
-    margin: auto 50%;
-    z-index: 1000;
     width: 50%;
+    bottom: 30px;
     color: var(--couleur-titre);
+    margin: auto 40%;
+    z-index: 1000;
 }
 
-footer .droits a{
+footer .droits a {
     text-decoration: none;
     color: var(--couleur-principale);
-
 }
 
-footer .droits a:hover{
+footer .droits a:hover {
     text-decoration: underline;
+    color: var(--couleur-principale);
 }
-
-footer .social{
-    position: absolute;
-    bottom: 30px;
-    left: 100px;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    color: var(--couleur-titre);
-}
-
-footer .social ul li{
-    list-style: none;
-}
-
-footer .social li a i{
-    color: var(--couleur-titre);
-    font-size: 1.4rem;
-    font-weight: 600;
-}
-
-
 
 /* ------------------------------------------------------------------------------------------------- */
 /* -------------------------------------------MEDIA QUERIES----------------------------------------- */
@@ -323,10 +296,6 @@ footer .social li a i{
         text-align: center;
         bottom: 0;
         font-size: 0.75rem;
-    }
-
-    footer .social{
-        position: relative;
     }
 
     @media (min-width: 320px) and (max-width: 575.98px) {}

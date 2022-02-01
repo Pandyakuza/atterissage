@@ -19,6 +19,10 @@ body {
     background: var(--couleur-principale);
 }
 
+/* ------------------------------------------------------------------------------------------------- */
+/* -------------------------------------------HEADER----------------------------------------- */
+/* ------------------------------------------------------------------------------------------------- */
+
 header{
     display: flex;
     position:absolute;
@@ -35,7 +39,7 @@ header .logo{
     position: relative;
     display: flex;
     align-items: center;
-    font-size: 28px;
+    font-size: 1.6rem;
     text-decoration: none;
     font-weight: 600;
     color: var(--couleur-titre);
@@ -51,6 +55,10 @@ header nav{
     position:relative;
 }
 
+header nav ul li{
+    list-style: none;
+}
+
 header nav a{
     text-decoration: none;
     color: var(--couleur-titre);
@@ -60,6 +68,10 @@ header nav a{
 header nav a:hover{
     color: var(--couleur-alt);
 }
+
+/* ------------------------------------------------------------------------------------------------- */
+/* -------------------------------------------SECTION----------------------------------------- */
+/* ------------------------------------------------------------------------------------------------- */
 
 section{
     position: relative;
@@ -126,6 +138,18 @@ section .box__txt a{
     text-decoration: none;
 }
 
+section .wave{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    z-index: 1;
+    pointer-events: none;
+}
+
+/* ------------------------------------------------------------------------------------------------- */
+/* -------------------------------------------BOUTONS CTA----------------------------------------- */
+/* ------------------------------------------------------------------------------------------------- */
+
 section .box__txt .box__btn{
     display: flex;
     justify-content: center;
@@ -142,19 +166,35 @@ section .box__txt .box__btn:hover{
     background-color:#0f613c;
 }
 
-section .wave{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    z-index: 1;
-    pointer-events: none;
+
+
+header nav .box__btn{
+    display: flex;
+    justify-content: center;
+    background-color:var(--couleur-secondaire);
+    border-radius: 50px;
+    padding: 15px;
+    font-size: 20px;
+    color: var(--couleur-titre);
+    margin-left: 15px;
 }
+
+header nav .box__btn:hover{
+    background-color:#0f613c;
+}
+
+
+
+/* ------------------------------------------------------------------------------------------------- */
+/* -------------------------------------------FOOTER----------------------------------------- */
+/* ------------------------------------------------------------------------------------------------- */
 
 footer{
     display: flex;
     position: relative;
     justify-content: space-between;
     align-items: center;
+    z-index: 100;
 }
 
 footer .droits{
@@ -177,22 +217,124 @@ footer .droits a:hover{
 }
 
 footer .social{
-    position:absolute;
+    position: absolute;
     bottom: 30px;
     left: 100px;
     display:flex;
     justify-content: center;
-    z-index: 1000;
     align-items: center;
-    filter: invert(1);
+    color: var(--couleur-titre);
 }
 
-footer .social li{
-    list-style-type: none;
+footer .social ul li{
+    list-style: none;
 }
 
-footer .social li a{
-    display: block;
-    transform: scale(0.8);
-    margin-right: 20px;
+footer .social li a i{
+    color: var(--couleur-titre);
+    font-size: 1.4rem;
+    font-weight: 600;
 }
+
+
+
+/* ------------------------------------------------------------------------------------------------- */
+/* -------------------------------------------MEDIA QUERIES----------------------------------------- */
+/* ------------------------------------------------------------------------------------------------- */
+
+/* Extra smalLL devices (portrait phones, Less than 320px) */
+    @media (max-width: 319.98px) {
+        header{
+            flex-direction: column;
+            padding: 30px 20px
+        }
+
+        header nav{
+            margin-top: 20px;
+        }
+
+        header nav a .box__btn{
+            font-size: 0.85rem;
+            letter-spacing: 2px;
+            padding: 10px 10px;
+        }
+
+        section{
+            flex-direction: column;
+            padding-top: 170px;
+            height: auto;
+        }
+
+        section .box__txt h2{
+            font-size: 1.9rem;
+            text-align: center;
+            line-height: 1.2;
+        }
+
+        section .box__txt p{
+            font-size: 1.2rem;
+            text-align: center;
+            line-height: 1.2;
+            margin-top: 10px;
+        }
+
+        section .box__txt .clock{
+            flex-direction: column;
+            margin: 20px 0px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        section .box__txt .clock .time{
+            margin-top: 10px;
+            margin-right: 0px;
+            font-size: 1.6rem;
+            border-radius: 50%;
+        }
+        section .box__txt .clock .time span{
+            font-size: 1rem;
+    }
+    section .box__txt a .box__btn{
+        font-size: 0.85rem;
+        letter-spacing: 2px;
+        padding: 10px 10px;
+        margin: 0px;
+    }
+
+    section .box__img img{
+        width: 300px;
+        margin-top: 0px;
+        bottom: 45px;
+    }
+
+    section .wave{
+        width: 100%;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer .droits{
+        position: relative;
+        width: 100%;
+        text-align: center;
+        bottom: 0;
+        font-size: 0.75rem;
+    }
+
+    footer .social{
+        position: relative;
+    }
+
+    @media (min-width: 320px) and (max-width: 575.98px) {}
+    /*Small devices (Landscape phones, 576px and up) */
+    @media (min-width: 576px) and (max-width: 767.98px) {}
+    /* Medium devices (tablets, 768px and up) */
+    @media (min-width: 768px) and (max-width: 991.98px) {}
+    /*Large devices (desktops, 992px and up) */
+    @media (min-width: 992px) and (max-width: 1199.98px) {}
+    /* Extra Large devices (Large desktops, 1200px and up) */
+    @media (min-width: 1200px) {}

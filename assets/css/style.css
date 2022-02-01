@@ -228,7 +228,7 @@ footer .droits a:hover {
 
         header nav a .box__btn{
             font-size: 0.85rem;
-            letter-spacing: 2px;
+            letter-spacing: 1px;
             padding: 10px 10px;
         }
 
@@ -269,34 +269,29 @@ footer .droits a:hover {
     }
     section .box__txt a .box__btn{
         font-size: 0.85rem;
-        letter-spacing: 2px;
+        letter-spacing: 1px;
         padding: 10px 10px;
         margin: 0px;
     }
 
     section .box__img img{
-        width: 300px;
+        width: 250px;
         margin-top: 0px;
         bottom: 45px;
     }
 
-    section .wave{
-        width: 100%;
-    }
     footer{
         display: flex;
-        flex-direction: column;
         justify-content: center;
-        align-items: center;
     }
 
     footer .droits{
-        position: relative;
         width: 100%;
         text-align: center;
-        bottom: 0;
         font-size: 0.75rem;
     }
+
+
 
     @media (min-width: 320px) and (max-width: 575.98px) {}
     /*Small devices (Landscape phones, 576px and up) */

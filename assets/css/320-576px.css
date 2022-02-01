@@ -2,7 +2,88 @@
     *{
         max-height: unset;
     }
-
-
-
+    header{
+        flex-direction: column;
+        padding: 30px 30px;
     }
+    header nav{
+        margin-top: 20px;
+    }
+    header nav a .box__btn{
+        font-size: 1rem;
+        letter-spacing: 2px;
+        padding: 10px 10px;
+    }
+
+    section{
+        flex-direction: column;
+        padding-top: 200px;
+        height: auto;
+        min-height: unset;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    section .box__txt h2{
+        font-size: 2rem;
+        text-align: center;
+        line-height: 1.5;
+    }
+
+    section .box__txt p{
+        font-size: 1.2rem;
+        text-align: center;
+        line-height: 1.4;
+        margin-top: 10px;
+        letter-spacing: 1.4px;
+    }
+
+    section .box__txt .clock{
+        flex-direction: column;
+        margin: 20px 0px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    section .box__txt .clock .time{
+        margin-top: 10px;
+        margin-right: 0px;
+        font-size: 1.6rem;
+        border-radius: 50%;
+    }
+    section .box__txt .clock .time span{
+        font-size: 1.1rem;
+}
+section .box__txt a{
+    display: flex;
+    justify-content: center;
+}
+
+    section .box__txt a .box__btn{
+    font-size: 1rem;
+    letter-spacing: 1px;
+    padding: 10px 10px;
+    margin: 0px;
+}
+
+    section .box__img img{
+    width: 450px;
+    margin-top: 0px;
+    bottom: 35px;
+}
+footer{
+    display: flex;
+    justify-content: center;
+}
+
+footer .droits{
+    text-align: center;
+    font-size: 0.75rem;
+    width: 50%;
+}
+
+section .wave{
+    width: 800px;
+}
+
+}

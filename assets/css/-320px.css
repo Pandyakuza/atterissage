@@ -56,12 +56,16 @@
     section .box__txt .clock .time span{
         font-size: 1rem;
 }
+section .box__txt a{
+    display: flex;
+    justify-content: center;
+}
+
 section .box__txt a .box__btn{
     font-size: 0.85rem;
     letter-spacing: 1px;
     padding: 10px 10px;
     margin: 0px;
-    margin-left: 50px;
 }
 
 section .box__img img{
